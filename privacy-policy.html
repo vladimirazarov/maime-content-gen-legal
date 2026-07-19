@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Maime Content Gen</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 640px; margin: 64px auto; padding: 0 20px; line-height: 1.6; color: #1c1c1e; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 18px; margin-top: 36px; }
+  a { color: #0a66c2; }
+  footer { margin-top: 48px; font-size: 14px; color: #888; }
+</style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: July 19, 2026</p>
+
+  <p>
+    Maime Content Gen ("the app") is a single-user desktop application for macOS. It is built and used
+    by an individual creator to turn their own music tracks into video content. This policy explains what
+    data the app handles and how.
+  </p>
+
+  <h2>What the app stores</h2>
+  <p>
+    All project data — audio files, transcribed lyrics, generated video clips, and rendered exports — is
+    stored locally on the user's Mac, inside the project folder the user chooses. Nothing is uploaded to
+    any server operated by the app's developer, because no such server exists.
+  </p>
+
+  <h2>API keys and access tokens</h2>
+  <p>
+    API keys for third-party services (AI video generation, language models) and OAuth access/refresh
+    tokens for YouTube and TikTok are stored exclusively in the macOS Keychain, protected by the operating
+    system. These credentials are used only to make requests directly from the app to the respective
+    service (OpenAI, Anthropic, the video generation provider, YouTube, TikTok) on the user's behalf, and
+    are never transmitted anywhere else.
+  </p>
+
+  <h2>What gets sent to third parties</h2>
+  <p>
+    When the user explicitly triggers an action, the app sends data directly to the relevant third-party
+    API over an encrypted connection:
+  </p>
+  <ul>
+    <li>Audio or lyric text to the configured language model provider, to plan a storyboard.</li>
+    <li>Generation prompts to the configured AI video provider, to generate video clips.</li>
+    <li>The finished video file to YouTube and/or TikTok, only when the user chooses to publish it, and only
+      to the account the user has authorized via that platform's own sign-in flow.</li>
+  </ul>
+  <p>
+    The app does not use analytics, tracking, or advertising SDKs of any kind, and does not share data
+    with any party other than the third-party services the user has explicitly configured.
+  </p>
+
+  <h2>Deleting your data</h2>
+  <p>
+    Since all data lives on the user's own Mac, it can be deleted at any time by removing the project
+    folder or using the app's built-in reset option. Revoking API keys or OAuth access can be done at any
+    time from the respective provider's account settings.
+  </p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be sent to <a href="mailto:azarov.swe@gmail.com">azarov.swe@gmail.com</a>.</p>
+
+  <footer><a href="index.html">&larr; Back</a></footer>
+</body>
+</html>
